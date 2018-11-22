@@ -1,0 +1,129 @@
+*{
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 75px;
+  position:relative;
+  z-index:1;
+}
+.example-card {
+  background-color: #fff;
+
+}
+
+.mat-card-header {
+  border-radius: 5px !important;
+  border: 1px solid #4c7ea2;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.card-title {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.example-header-image {
+  background-image: url("../assets/Bank.png");
+
+  background-size: cover;
+
+  background-color: white;
+}
+img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
+  /* padding: 2px; */
+  overflow: hidden;
+}
+.card-title {
+  font-weight: bold;
+  margin-right: 50px;
+  font-family: "Arvo", serif;
+  color: #f2f2f2;
+  letter-spacing: 0.5px;
+  word-spacing: 4px;
+}
+
+mat-card-header {
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+.mat-card-title {
+  margin-bottom: 0px;
+}
+
+.imageContainer {
+  width: 56px;
+  height: 35px;
+  margin: 4px;
+  padding: 8px;
+}
+
+
+.navbarTop {
+  width: 100% !important;
+  height: var(--sticky-nav-height);
+  font-family: "Lobster", cursive;
+  margin: auto;
+  padding: 4px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: #486f97;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 30px;
+  overflow: hidden;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+}
+#navbarbelow{
+  width: 100% !important;
+  
+  font-family: "Lobster", cursive;
+  margin: auto;
+
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+background-color: #fff;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* letter-spacing: 2px; */
+  /* font-size: 30px; */
+  overflow: hidden;
+   z-index:10;
+  position: fixed;
+
+} 
+
+.stickyNavWrapper {
+  min-height: var(--sticky-nav-height);
+  width: 100%;
+}
+
+.bottom-group{
+display :flex;
+justify-content: space-around;
+align-items:center;
+padding :16px 0;
+}
+
+
+
+

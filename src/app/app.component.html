@@ -1,0 +1,53 @@
+<div class="stickyNavWrapper">
+  <nav class="navbarTop"><span>Ledger Data in Blockchain</span></nav>
+</div>
+<div id="navbarbelow">
+<div class="bottom-group col-lg-12">
+  <div class='col-lg-4' (click)="getRecordsChannelData('records')">
+    <button type="button" class="btn btn-default">Records Channel</button>
+  </div>
+  <div class="col-lg-4">
+    <button type="button" class="btn btn-default" (click)="getLendingChannelData('lending')">Lending Channel</button>
+  </div>
+  <div class="col-lg-4">
+    <button type="button" class="btn btn-default" (click)="getBooksChannelData('books')">Books Channel</button>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="col-lg-12" style="margin: 16px 0px" *ngFor="let block of ledgerBlocks">
+    <mat-card class="example-card">
+
+      <mat-card-header>
+
+        <div mat-card-avatar class="imageContainer"> <img [src]="block.images"></div>
+
+        <mat-card-title>
+          <div class="card-title">
+            {{block.Key}}
+          </div>
+        </mat-card-title>
+
+      </mat-card-header>
+
+      <mat-card-content *ngIf="!collapsed">
+
+        <pre style="color: #fff; padding:20px;margin:10px;background-color:#152678 ;font-weight:bold;letter-spacing: 0.75px;font-size:12px">{{block.Record | json}}</pre>
+
+      </mat-card-content>
+
+      <mat-card-actions>
+
+        <button mat-raised-button (click)="collapsed=true" style="background-color:#152678;color:#fff;margin-left:15px;">Collapse
+          card
+          content
+        </button>
+
+        <button mat-raised-button (click)="collapsed=false" style="background-color: #152678;color:#fff;">Uncollapse
+          card content</button>
+
+      </mat-card-actions>
+
+    </mat-card>
+  </div>
+</div>
